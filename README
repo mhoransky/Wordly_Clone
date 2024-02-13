@@ -1,0 +1,10 @@
+This is a Python script for playing the popular word-guessing game that goes by Wordly or other aliases.
+The script is capable of filtering through English language books that can be freely added to the lib file,
+creating a json file with a filtered and length sorted dictionary of all the content words in these books,
+and letting you guess a word with a length of your liking.
+The gameplay is simple and terminal-based. You pick a word length (starts at 4), the scripts picks a random
+word from the appropriate dictionary section of the new_dict.json file, and it gives you 5 attempts at
+guessing the word. Because it likes to play fair, it will discount any attempts that use words it is
+unfamiliar with. When you guess a valid word, it will give you two lines of hints. The first line contains
+the right letters in wrong position; the second one sums up the fragments of the secret word you have
+already guessed right. If you don't get the right answer in 5 valid attempts, you lose the game.
